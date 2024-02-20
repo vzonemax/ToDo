@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.App {
+    /* min-width: 500px; */
+    margin: 0 10%;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: solid 2px silver;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__btns {
+    display: flex;
+}
+
+.post-enter {
+    opacity: 0;
+    transform: translateX(-250px);
+}
+.post-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transform: translateX(-250px);
+    transition: all 500ms ease-in;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: silver;
+    justify-content: right;
+}
+
+.navbar__links {
+    margin: 0 15px;
+    color: black;
+}

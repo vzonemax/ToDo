@@ -1,0 +1,22 @@
+.page__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    margin: 15px 0;
+    padding: 15px;
+    cursor: pointer;
+    border: solid 1px silver;
+}
+
+.page:hover {
+    border: solid 1px black;
+}
+
+.page__current {
+    border: 1px solid black;
+    background: silver;
+    font-weight: bold;
+}
